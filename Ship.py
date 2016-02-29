@@ -16,11 +16,13 @@ class Ship(Screen):
 			"right"       : [K_RIGHT],
 			"rotate_left" : [K_a, K_q],
 			"rotate_right": [K_d],
-			"fire"        : [K_SPACE]
+			"fire"        : [K_SPACE, K_l, K_w, K_s]
 		}
 
 		self.image = pygame.image.load('img/' + name_image).convert_alpha()
 		self.rect  = self.image.get_rect()
+
+		self.rect.center = self.srect.right - 50, self.srect.bottom - 50
 		self.ball = Ball(default_center=self.rect.center)
 
 		self.vitesse = 2
@@ -30,6 +32,8 @@ class Ship(Screen):
 		self.current_angle = 0
 
 		self.cheated = 0
+
+		self.vie = 50
 
 	def _test_index(self, liste, index):
 		""" 
@@ -45,6 +49,7 @@ class Ship(Screen):
 		return ok
 
 	def _move(self, x, y):
+
 		self.rect.move_ip((x, y))
 		self.ball.follow(self.rect.center)
 
@@ -59,13 +64,17 @@ class Ship(Screen):
 		keystate = pygame.key.get_pressed()
 		# bouger
 		if self._test_index(keystate, self.keys["left"]):
-			self._move(-self.vitesse, 0)
+			if self.rect.left > self.srect.left:
+				self._move(-self.vitesse, 0)
 		if self._test_index(keystate, self.keys["right"]):
-			self._move(self.vitesse, 0)
+			if self.rect.right < self.srect.right:
+				self._move(self.vitesse, 0)
 		if self._test_index(keystate, self.keys["up"]):
-			self._move(0, -self.vitesse)
+			if self.rect.top > self.srect.top:
+				self._move(0, -self.vitesse)
 		if self._test_index(keystate, self.keys["down"]):
-			self._move(0, self.vitesse)
+			if self.rect.bottom < self.srect.bottom:
+				self._move(0, self.vitesse)
 
 		# tourner
 		if self._test_index(keystate, self.keys["rotate_left"]):
@@ -95,3 +104,26 @@ class Ship(Screen):
 		self.screen.blit(self.image, self.rect)
 
 		# comme ca, le vaisseau est au dessus
+	
+	def get_center(self):
+		return self.rect.center
+
+	def get_rect(self):
+		return self.rect
+
+	def get_ball_rect(self):
+		return self.ball.rect
+
+	def collision(self, rect):
+		return self.rect.colliderect(rect)
+
+	def stop_ball(self):
+		self.ball.rect.center = self.rect.center
+
+	def explose(self):
+		self.vie -= 10
+		if self.vie < 0:
+			print('Fin du jeu', self.vie)
+			return 0
+		else:
+			return 1

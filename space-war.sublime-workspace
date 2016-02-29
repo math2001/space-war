@@ -519,30 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "server.py",
-			"settings":
-			{
-				"buffer_size": 253,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "client.py",
-			"settings":
-			{
-				"buffer_size": 515,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Ship.py",
-			"settings":
-			{
-				"buffer_size": 2591,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -552,9 +528,13 @@
 	"command_palette":
 	{
 		"height": 375.0,
-		"last_filter": "sspy",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"git",
+				"Set Syntax: Git Commit Message"
+			],
 			[
 				"sspy",
 				"Set Syntax: Python"
@@ -919,17 +899,18 @@
 	},
 	"expanded_folders":
 	[
-		"/C/#Python/Python mes jeux/space-war",
-		"/C/#Python/Python mes jeux/space-war/img"
+		"/C/#Python/Python mes jeux/space-war"
 	],
 	"file_history":
 	[
-		"/C/#Python/Python mes jeux/space-war/client.py",
-		"/C/#Python/Python mes jeux/space-war/Screen.py",
-		"/C/#Python/Python mes jeux/space-war/Ball.py",
-		"/C/#Python/Python mes jeux/space-war/test.py",
 		"/C/#Python/Python mes jeux/space-war/#main.py",
+		"/C/#Python/Python mes jeux/space-war/Ball.py",
+		"/C/#Python/Python mes jeux/space-war/Tower.py",
 		"/C/#Python/Python mes jeux/space-war/Ship.py",
+		"/C/#Python/Python mes jeux/space-war/client.py",
+		"/C/#Python/Python mes jeux/space-war/server.py",
+		"/C/#Python/Python mes jeux/space-war/Screen.py",
+		"/C/#Python/Python mes jeux/space-war/test.py",
 		"/C/#Python/Python mes jeux/space-war/## test.py",
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/snippet/python/pygame/image-load.sublime-snippet",
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/my-color-scheme/grafikart-v2.tmTheme",
@@ -1049,9 +1030,7 @@
 		"/C/wamp/www/tests/#tests/onglet/onglet.js",
 		"/C/wamp/www/tests/#tests/onglet/onglet.css",
 		"/C/wamp/www/tests/#tests/coloration.php",
-		"/C/wamp/www/tests/#tests/php/date.php",
-		"/C/wamp/www/tests/#tests/js/if.html",
-		"/C/wamp/www/tests/#tests/php/virgule.php"
+		"/C/wamp/www/tests/#tests/php/date.php"
 	],
 	"find":
 	{
@@ -1074,6 +1053,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"import",
 			"5001",
 			":",
 			"[",
@@ -1200,8 +1180,7 @@
 			"1",
 			"b",
 			"i",
-			"**",
-			"\\*"
+			"**"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1254,96 +1233,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "server.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 253,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								253,
-								0
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "client.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 515,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								204,
-								204
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Ship.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2591,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1355,
-								1139
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 760.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1403,6 +1294,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"ain",
+				"#main.py"
+			],
 			[
 				"ship",
 				"Ship.py"
@@ -1910,10 +1805,6 @@
 			[
 				"cls",
 				"control/Color.class.php"
-			],
-			[
-				"emm",
-				"emmet.php"
 			]
 		],
 		"width": 0.0

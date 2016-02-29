@@ -6,9 +6,9 @@ from couleur import *
 pygame.init()
 
 class Ball:
-	""" 
-		Cette classe n'est pas appeler depuis le main, mais depuis la class Ship
-	"""
+	
+	"""Cette classe n'est pas appeler depuis le main, mais depuis la class Ship """
+
 	def __init__(self, default_center=(0, 0), image_name="ball-1.png"):
 		self.image = pygame.image.load('img/' + image_name).convert_alpha()
 		self.rect  = self.image.get_rect(center=default_center)
@@ -47,12 +47,12 @@ class Ball:
 			self.speed = [-x, -y]
 			self.is_fired = 1
 
-	def fire_to(self, destination):
+	def fire_to_del(self, destination):
 		""" `destination` est un tuple : (x, y) """
 		if not self.is_fired:
 			# calcule des x a rajouter en fonction de la vitesse
 			x_rajouter = self.rect.x - destination[0]
-			print x_rajouter
+			self.speed = [x_rajouter, 0]
 
 
 	def move(self, screen_rect, center_ship):
@@ -62,3 +62,4 @@ class Ball:
 
 	def render(self):
 		return self.image, self.rect
+
