@@ -61,7 +61,7 @@ while cont:
 
 		for tower in towers:
 			tower.render()
-			# tower.fire(ship.get_center())
+			tower.fire(ship.get_center())
 			# on test si la ball du ship n'a pas touche une tower
 			if tower.collision(ship.get_ball_rect()) and ship.ball.is_fired:
 				towers.remove(tower) # on le retire de la liste - towerS.rem...
