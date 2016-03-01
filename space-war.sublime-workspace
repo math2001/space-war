@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"per",
+				"percentage"
+			],
+			[
+				"perc",
+				"percent_color"
+			],
+			[
+				"color",
+				"color_percent"
+			],
+			[
+				"r",
+				"rounding"
+			],
+			[
+				"di",
+				"dify"
+			],
+			[
+				"dif",
+				"dify"
+			],
+			[
+				"de",
+				"destination"
+			],
+			[
+				"fire",
+				"is_fire"
+			],
+			[
 				"rot",
 				"rotate_left"
 			],
@@ -70,10 +102,6 @@
 			[
 				"max",
 				"max-width"
-			],
-			[
-				"r",
-				"r-a	right: auto;"
 			],
 			[
 				"text",
@@ -384,10 +412,6 @@
 				"d-rb	display: ruby;"
 			],
 			[
-				"di",
-				"d-if	display: inline-flex;"
-			],
-			[
 				"tj",
 				"tj-d	text-justify: distribute;"
 			],
@@ -490,35 +514,35 @@
 			[
 				"font",
 				"font-weight"
-			],
-			[
-				"margin",
-				"margin-right"
-			],
-			[
-				"#a",
-				"#art-3"
-			],
-			[
-				"#art",
-				"#art-2"
-			],
-			[
-				"marg",
-				"margin"
-			],
-			[
-				"sub",
-				"substr"
-			],
-			[
-				"form",
-				"formu"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "Score.py",
+			"settings":
+			{
+				"buffer_size": 513,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "#main.py",
+			"settings":
+			{
+				"buffer_size": 2204,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Ship.py",
+			"settings":
+			{
+				"buffer_size": 3830,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -527,10 +551,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 375.0,
-		"last_filter": "",
+		"height": 160.0,
+		"last_filter": "ssjs",
 		"selected_items":
 		[
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"setings us",
+				"Preferences: Settings - User"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
 			[
 				"git",
 				"Set Syntax: Git Commit Message"
@@ -558,10 +594,6 @@
 			[
 				"extract",
 				"PackageResourceViewer: Extract Package"
-			],
-			[
-				"list",
-				"Package Control: List Packages"
 			],
 			[
 				"inst",
@@ -674,10 +706,6 @@
 			[
 				"ssjson",
 				"Set Syntax: JSON"
-			],
-			[
-				"ssjs",
-				"Set Syntax: JavaScript"
 			],
 			[
 				"oddl",
@@ -876,13 +904,15 @@
 				"Set Syntax: PHP"
 			]
 		],
-		"width": 514.0
+		"width": 602.0
 	},
 	"console":
 	{
 		"height": 383.0,
 		"history":
 		[
+			"sublime.log_commands(True)",
+			"print('coucou')",
 			"sublime.log_commands(True)",
 			"sublime.log_input(True)",
 			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
@@ -899,17 +929,30 @@
 	},
 	"expanded_folders":
 	[
-		"/C/#Python/Python mes jeux/space-war"
+		"/C/#Python/Python mes jeux/space-war",
+		"/C/#Python/Python mes jeux/space-war/font"
 	],
 	"file_history":
 	[
+		"/C/#Python/Python mes jeux/space-war/Son.py",
 		"/C/#Python/Python mes jeux/space-war/#main.py",
 		"/C/#Python/Python mes jeux/space-war/Ball.py",
 		"/C/#Python/Python mes jeux/space-war/Tower.py",
 		"/C/#Python/Python mes jeux/space-war/Ship.py",
+		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/#Python/Python mes jeux/space-war/Time.py",
+		"/C/#Python/Python mes jeux/space-war/Life.py",
+		"/C/#Python/Python mes jeux/space-war/Game.py",
+		"/C/#Python/Python mes jeux/space-war/Missile.py",
+		"/C/Users/math/Desktop/min-js-function.htm",
+		"/C/#Python/Python mes jeux/space-war/couleur.py",
+		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/snippet/python/import-base.sublime-snippet",
+		"/C/Users/math/python/Lib/site-packages/pygame/draw.pyd",
+		"/C/Users/math/python/Lib/site-packages/pygame/__init__.py",
+		"/C/#Python/Python mes jeux/space-war/Screen.py",
+		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/zz snippet lister/package-control.cleanup",
 		"/C/#Python/Python mes jeux/space-war/client.py",
 		"/C/#Python/Python mes jeux/space-war/server.py",
-		"/C/#Python/Python mes jeux/space-war/Screen.py",
 		"/C/#Python/Python mes jeux/space-war/test.py",
 		"/C/#Python/Python mes jeux/space-war/## test.py",
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/snippet/python/pygame/image-load.sublime-snippet",
@@ -923,7 +966,6 @@
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/Color Highlighter/themes/grafikart-v2.tmTheme",
 		"/C/wamp/www/tests/#tests/editor/styles/css/editor.css",
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/wamp/www/tests/#tests/sass-test/styles/sass/section.scss",
 		"/C/wamp/www/tests/#tests/editor/styles/editor.scss",
 		"/C/wamp/www/tests/#tests/js/custom-box/custom-box.css",
@@ -1019,18 +1061,7 @@
 		"/C/wamp/www/tests/#tests/pictureViewer/pv.js",
 		"/C/wamp/www/tests/#tests/file/js/monfichier.txt",
 		"/C/wamp/www/tests/#tests/php/array.php",
-		"/C/wamp/www/tests/#tests/file/js/file.html",
-		"/C/wamp/www/tests/#tests/js/draggable/draggable.html",
-		"/C/wamp/www/tests/#tests/js/var.html",
-		"/C/wamp/www/tests/#tests/sdf.lol",
-		"/C/wamp/www/tests/input type file/main.php",
-		"/C/wamp/www/tests/#tests/file/monfichier.txt",
-		"/C/wamp/www/tests/#tests/file/file.php",
-		"/C/wamp/www/tests/#tests/onglet/onglet.html",
-		"/C/wamp/www/tests/#tests/onglet/onglet.js",
-		"/C/wamp/www/tests/#tests/onglet/onglet.css",
-		"/C/wamp/www/tests/#tests/coloration.php",
-		"/C/wamp/www/tests/#tests/php/date.php"
+		"/C/wamp/www/tests/#tests/file/js/file.html"
 	],
 	"find":
 	{
@@ -1053,6 +1084,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"collision",
+			"tower.col",
+			"percent ",
+			"500",
+			"cont",
+			"vie",
+			"life",
+			"max",
+			",",
+			"x",
+			"ball",
+			"Ball",
+			"ball",
+			"Ball",
 			"import",
 			"5001",
 			":",
@@ -1166,21 +1211,7 @@
 			"div",
 			"var ",
 			"</p>",
-			"<a href=\"#\">",
-			"</a>",
-			"/",
-			"`",
-			".",
-			"u",
-			"]+)",
-			"------",
-			"li",
-			"*",
-			"h1",
-			"1",
-			"b",
-			"i",
-			"**"
+			"<a href=\"#\">"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1233,8 +1264,99 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Score.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 513,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								465,
+								465
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"color_scheme": "Packages/User/Color Highlighter/themes/grafikart-v2.tmTheme",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "#main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1610,
+								1610
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/grafikart-v2.tmTheme",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Ship.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3830,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								530,
+								530
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/grafikart-v2.tmTheme",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 296.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1269,6 +1391,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.channel_repository_tools":
+	{
+		"height": 314.0
+	},
 	"output.exec":
 	{
 		"height": 144.0
@@ -1276,6 +1402,10 @@
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 429.0
 	},
 	"output.unsaved_changes":
 	{
@@ -1295,12 +1425,64 @@
 		"selected_items":
 		[
 			[
-				"ain",
+				"ship",
+				"Ship.py"
+			],
+			[
+				"main",
 				"#main.py"
 			],
 			[
-				"ship",
-				"Ship.py"
+				"son",
+				"Son.py"
+			],
+			[
+				"tower",
+				"Tower.py"
+			],
+			[
+				"ball",
+				"Ball.py"
+			],
+			[
+				"ti",
+				"Time.py"
+			],
+			[
+				"life",
+				"Life.py"
+			],
+			[
+				"game",
+				"Game.py"
+			],
+			[
+				"mai",
+				"#main.py"
+			],
+			[
+				"mi",
+				"Missile.py"
+			],
+			[
+				"gam",
+				"Game.py"
+			],
+			[
+				"tow",
+				"Tower.py"
+			],
+			[
+				"cou",
+				"couleur.py"
+			],
+			[
+				"bal",
+				"Ball.py"
+			],
+			[
+				"ain",
+				"#main.py"
 			],
 			[
 				"te",
@@ -1521,10 +1703,6 @@
 			[
 				"creez",
 				"sublime-text/creez-snippets.php"
-			],
-			[
-				"main",
-				"style/main.css"
 			],
 			[
 				"plan",
@@ -1757,54 +1935,6 @@
 			[
 				"com",
 				"commandes-base.php"
-			],
-			[
-				"clss",
-				"control/Color.class.php"
-			],
-			[
-				"colo",
-				"comment-je-color-mon-code.php"
-			],
-			[
-				"class",
-				"control/Aside.class.php"
-			],
-			[
-				"col",
-				"control/Color.class.php"
-			],
-			[
-				"ame",
-				"ameliorez-snippets.php"
-			],
-			[
-				"a",
-				"ameliorez-snippets.php"
-			],
-			[
-				"testp",
-				"test/test-coloration-php.php"
-			],
-			[
-				"test",
-				"test/test-coloration.php"
-			],
-			[
-				"ams",
-				"ameliorez-snippets.php"
-			],
-			[
-				"rapi",
-				"tapez-des-balises-html-rapidement.php"
-			],
-			[
-				"head",
-				"bloc/header.php"
-			],
-			[
-				"cls",
-				"control/Color.class.php"
 			]
 		],
 		"width": 0.0

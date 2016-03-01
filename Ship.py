@@ -1,8 +1,11 @@
 import pygame
 from pygame.locals import *
+
 from couleur import *
 from Screen import Screen
 from Ball import Ball
+from Son import Son
+from Score import Score
 
 pygame.init()
 
@@ -16,24 +19,30 @@ class Ship(Screen):
 			"right"       : [K_RIGHT],
 			"rotate_left" : [K_a, K_q],
 			"rotate_right": [K_d],
-			"fire"        : [K_SPACE, K_l, K_w, K_s]
+			"fire"        : [K_SPACE],
+
+			# test
+			"lose_life": [K_l] # c'est un L
 		}
 
 		self.image = pygame.image.load('img/' + name_image).convert_alpha()
 		self.rect  = self.image.get_rect()
 
-		self.rect.center = self.srect.right - 50, self.srect.bottom - 50
+		self.rect.center = self.srect.center
 		self.ball = Ball(default_center=self.rect.center)
 
 		self.vitesse = 2
-		self.vitesse_rotate = 1
+		self.vitesse_rotate = 2
 
 		self.orginal = self.image.copy()
 		self.current_angle = 0
 
 		self.cheated = 0
 
-		self.vie = 50
+		self.max_life = 50
+		self.life = self.max_life
+
+		self.score = Score()
 
 	def _test_index(self, liste, index):
 		""" 
@@ -61,6 +70,7 @@ class Ship(Screen):
 		self.image = image
 
 	def checker(self):
+		self.is_rotate = False
 		keystate = pygame.key.get_pressed()
 		# bouger
 		if self._test_index(keystate, self.keys["left"]):
@@ -79,18 +89,19 @@ class Ship(Screen):
 		# tourner
 		if self._test_index(keystate, self.keys["rotate_left"]):
 			self._spin(self.vitesse_rotate)
+			self.is_rotate = True
 		if self._test_index(keystate, self.keys["rotate_right"]):
 			self._spin(-self.vitesse_rotate)
+			self.is_rotate = True
 
 		# tirer
 		if self._test_index(keystate, self.keys["fire"]):
 			self.ball.fire(self.current_angle)
 
-	def checker_t(self):
-		keystate = pygame.key.get_pressed()
+		# test
+		if self._test_index(keystate, self.keys["lose_life"]):
+			self.life -= 1
 
-		if self._test_index(keystate, self.keys["rotate_left"]):
-			self._spin(self.vitesse_rotate)
 
 	def render(self):
 		# on se sert de cette fonction pour faire bouger la balle
@@ -102,7 +113,9 @@ class Ship(Screen):
 		self.screen.blit(params[0], params[1])
 		# PUIS le vaisseau
 		self.screen.blit(self.image, self.rect)
-
+		score, rect = self.score.render()
+		rect.midtop = self.srect.midtop
+		self.screen.blit(score, rect)
 		# comme ca, le vaisseau est au dessus
 	
 	def get_center(self):
@@ -119,11 +132,32 @@ class Ship(Screen):
 
 	def stop_ball(self):
 		self.ball.rect.center = self.rect.center
+		self.ball.speed = [0, 0]
+		self.ball.is_fired = False
 
 	def explose(self):
-		self.vie -= 10
-		if self.vie < 0:
-			print('Fin du jeu', self.vie)
+		self.life -= 1
+		if self.life < 0:
 			return 0
 		else:
 			return 1
+
+	def get_max_life(self):
+		return self.max_life
+
+	def get_life(self):
+		return self.life
+
+	def add_score(self):
+		self.score.add()
+
+	def is_rotating(self):
+		return self.is_rotate
+
+	def full_life(self):
+		self.life = self.max_life
+
+	def add_life(self, nb):
+		self.life += nb
+		if self.life > self.max_life:
+			self.life = self.max_life

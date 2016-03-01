@@ -14,7 +14,7 @@ class Ball:
 		self.rect  = self.image.get_rect(center=default_center)
 
 		self.speed = [0, 0]
-		self.vitesse = 8
+		self.vitesse = 10
 		self.is_fired = 0
 
 	def _is_out(self, screen_rect, center_ship):
@@ -22,7 +22,7 @@ class Ball:
 			self.speed = [0, 0]
 			self.rect.center = center_ship
 			self.is_fired = 0
-
+			
 	def follow(self, pos):
 		if self.speed[0] + self.speed[1] == 0: # la balle n est pas tire
 			self.rect.center = pos
@@ -46,14 +46,6 @@ class Ball:
 
 			self.speed = [-x, -y]
 			self.is_fired = 1
-
-	def fire_to_del(self, destination):
-		""" `destination` est un tuple : (x, y) """
-		if not self.is_fired:
-			# calcule des x a rajouter en fonction de la vitesse
-			x_rajouter = self.rect.x - destination[0]
-			self.speed = [x_rajouter, 0]
-
 
 	def move(self, screen_rect, center_ship):
 		self.rect.move_ip(self.speed)

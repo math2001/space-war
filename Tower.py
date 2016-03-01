@@ -48,3 +48,6 @@ class Tower(Screen):
 
 	def get_missile_rect(self):
 		return self.missile.rect
+
+	def remove_missile(self):
+		self.missile.rect.center = self.rect.center
