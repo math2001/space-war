@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"son",
+				"son_active"
+			],
+			[
+				"play",
+				"play_music"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"level",
+				"level_rect"
+			],
+			[
 				"per",
 				"percentage"
 			],
@@ -288,10 +304,6 @@
 				"scrollContainer"
 			],
 			[
-				"play",
-				"play_button"
-			],
-			[
 				"pla",
 				"play_button"
 			],
@@ -354,10 +366,6 @@
 			[
 				"min",
 				"animdir-n	animation-direction: normal;"
-			],
-			[
-				"if",
-				"ifelse	<?php if (…) ?> … <?php else ?> … <?php endif ?>"
 			],
 			[
 				"inc",
@@ -506,43 +514,11 @@
 			[
 				"html",
 				"htmlspecialchars"
-			],
-			[
-				"paddi",
-				"padding"
-			],
-			[
-				"font",
-				"font-weight"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "Score.py",
-			"settings":
-			{
-				"buffer_size": 513,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "#main.py",
-			"settings":
-			{
-				"buffer_size": 2204,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Ship.py",
-			"settings":
-			{
-				"buffer_size": 3830,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -551,10 +527,30 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 160.0,
-		"last_filter": "ssjs",
+		"height": 260.0,
+		"last_filter": "key",
 		"selected_items":
 		[
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"settin",
+				"Preferences: Settings - User"
+			],
+			[
+				"previ",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
 			[
 				"ssjs",
 				"Set Syntax: JavaScript"
@@ -564,16 +560,8 @@
 				"Preferences: Settings - User"
 			],
 			[
-				"list",
-				"Package Control: List Packages"
-			],
-			[
 				"git",
 				"Set Syntax: Git Commit Message"
-			],
-			[
-				"sspy",
-				"Set Syntax: Python"
 			],
 			[
 				"ship",
@@ -760,10 +748,6 @@
 				"Color Scheme Editor: Edit current color scheme"
 			],
 			[
-				"previ",
-				"Markdown Preview: Preview in Browser"
-			],
-			[
 				"liste",
 				"Package Control: List Packages"
 			],
@@ -929,23 +913,39 @@
 	},
 	"expanded_folders":
 	[
-		"/C/#Python/Python mes jeux/space-war",
-		"/C/#Python/Python mes jeux/space-war/font"
+		"/C/#Python/Python mes jeux/space-war"
 	],
 	"file_history":
 	[
-		"/C/#Python/Python mes jeux/space-war/Son.py",
+		"/C/#Python/Python mes jeux/space-war/Screenshot.py",
 		"/C/#Python/Python mes jeux/space-war/#main.py",
-		"/C/#Python/Python mes jeux/space-war/Ball.py",
-		"/C/#Python/Python mes jeux/space-war/Tower.py",
-		"/C/#Python/Python mes jeux/space-war/Ship.py",
+		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/#Python/Python mes jeux/space-war/FileController.py",
+		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/snippet/python/big-commentaire.sublime-snippet",
+		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/Theme - Soda/README.md",
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/#Python/Python mes jeux/space-war/Son.py",
+		"/C/#Python/Python mes jeux/space-war/Tower.py",
+		"/C/#Python/Python mes jeux/space-war/Missile.py",
+		"/C/#Python/Python mes jeux/space-war/## coucou.py",
+		"/C/#Python/Python mes jeux/space-war/Score.py",
+		"/C/#Python/Python mes jeux/space-war/Game.py",
+		"/C/#Python/Python mes jeux/space-war/Tools.py",
+		"/C/#Python/Python mes jeux/space-war/Ship.py",
+		"/C/#Python/Python mes jeux/space-war/couleur.py",
+		"/C/#Python/Python test/converter-color/converter-color.py",
+		"/C/Users/math/Desktop/coloration-syntaxique.scss",
+		"/C/Users/math/Desktop/coloration-syntaxique.css",
+		"/C/Users/math/Desktop/coloration-suppr.php",
+		"/C/#Python/Python mes jeux/space-war/#Tools.py",
+		"/C/#Python/Python mes jeux/clique-record/clique-record.py",
+		"/C/#Python/Python mes jeux/space-war/data/score.txt",
+		"/C/#Python/Python mes jeux/space-war/Ball.py",
+		"/C/Users/math/Desktop/test-svg.svg",
+		"/C/Users/math/Desktop/redac-femme-cned.txt",
 		"/C/#Python/Python mes jeux/space-war/Time.py",
 		"/C/#Python/Python mes jeux/space-war/Life.py",
-		"/C/#Python/Python mes jeux/space-war/Game.py",
-		"/C/#Python/Python mes jeux/space-war/Missile.py",
 		"/C/Users/math/Desktop/min-js-function.htm",
-		"/C/#Python/Python mes jeux/space-war/couleur.py",
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/snippet/python/import-base.sublime-snippet",
 		"/C/Users/math/python/Lib/site-packages/pygame/draw.pyd",
 		"/C/Users/math/python/Lib/site-packages/pygame/__init__.py",
@@ -1005,10 +1005,7 @@
 		"/C/wamp/www/tests/#tests/sass/styles/css",
 		"/C/#Cours-OC-web/HTML-CSS/# SASS/Les regles d'imbrication et l'operateur &.html",
 		"/C/wamp/www/tests/#tests/sass/sass.html",
-		"/C/Users/math/Desktop/coloration-syntaxique.scss",
-		"/C/Users/math/Desktop/coloration-syntaxique.css",
 		"/C/#Cours-OC-web/HTML-CSS/# SASS/z ordre.txt",
-		"/C/Users/math/Desktop/coloration-suppr.php",
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/Color Highlighter/themes/Math2001 - grafikart.fr.tmTheme",
 		"/C/Users/math/Desktop/coloration-suppr.html",
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/my-color-scheme/Math2001 - Aqua.tmTheme",
@@ -1047,21 +1044,7 @@
 		"/C/wamp/www/tests/#tests/jQuery/cookie_saver.php",
 		"/C/wamp/www/tests/#tests/jQuery/mon-test.php",
 		"/C/wamp/www/tests/#tests/jQuery/mon-test.html",
-		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/wamp/www/tests/#tests/regex/myfile.php",
-		"/C/wamp/www/tests/#tests/regex/oc.php",
-		"/C/wamp/www/tests/#tests/js/class/main.html",
-		"/C/wamp/www/tests/#tests/js/class/class.js",
-		"/C/wamp/www/tests/#tests/php/constante/recup.php",
-		"/C/wamp/www/tests/#tests/php/constante/main.php",
-		"/C/wamp/www/tests/#tests/pictureViewer/pv.css",
-		"/C/wamp/www/tests/#tests/pictureViewer/pictureViewer.php",
-		"/C/wamp/www/tests/#tests/pictureViewer/pv2.js",
-		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/snippet/js/addEventListener.sublime-snippet",
-		"/C/wamp/www/tests/#tests/pictureViewer/pv.js",
-		"/C/wamp/www/tests/#tests/file/js/monfichier.txt",
-		"/C/wamp/www/tests/#tests/php/array.php",
-		"/C/wamp/www/tests/#tests/file/js/file.html"
+		"/C/wamp/www/tests/#tests/regex/myfile.php"
 	],
 	"find":
 	{
@@ -1084,6 +1067,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"os.path.join('data', 'nb_screenshot.txt')",
+			"screen",
+			"motie",
+			"=",
+			"10",
+			"grey",
+			"score",
+			"text[i]",
+			"100",
+			"		",
+			"path",
 			"collision",
 			"tower.col",
 			"percent ",
@@ -1200,18 +1194,7 @@
 			"\"([a-zA-Z]+)\"",
 			"\":",
 			"\"",
-			"width",
-			"nameSpan",
-			"nbSpan",
-			"currentImg",
-			"inline-",
-			"inline",
-			"name",
-			"span",
-			"div",
-			"var ",
-			"</p>",
-			"<a href=\"#\">"
+			"width"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1264,99 +1247,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Score.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 513,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								465,
-								465
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"color_scheme": "Packages/User/Color Highlighter/themes/grafikart-v2.tmTheme",
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "#main.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2204,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1610,
-								1610
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/grafikart-v2.tmTheme",
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1140.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Ship.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3830,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								530,
-								530
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/grafikart-v2.tmTheme",
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 296.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1425,10 +1317,6 @@
 		"selected_items":
 		[
 			[
-				"ship",
-				"Ship.py"
-			],
-			[
 				"main",
 				"#main.py"
 			],
@@ -1437,12 +1325,52 @@
 				"Son.py"
 			],
 			[
+				"mis",
+				"Missile.py"
+			],
+			[
+				"tow",
+				"Tower.py"
+			],
+			[
+				"missil",
+				"Missile.py"
+			],
+			[
 				"tower",
 				"Tower.py"
 			],
 			[
+				"sco",
+				"Score.py"
+			],
+			[
+				"game",
+				"Game.py"
+			],
+			[
+				"ship",
+				"Ship.py"
+			],
+			[
+				"too",
+				"Tools.py"
+			],
+			[
+				"score",
+				"Score.py"
+			],
+			[
+				"soc",
+				"Score.py"
+			],
+			[
 				"ball",
 				"Ball.py"
+			],
+			[
+				"miss",
+				"Missile.py"
 			],
 			[
 				"ti",
@@ -1451,10 +1379,6 @@
 			[
 				"life",
 				"Life.py"
-			],
-			[
-				"game",
-				"Game.py"
 			],
 			[
 				"mai",
@@ -1467,10 +1391,6 @@
 			[
 				"gam",
 				"Game.py"
-			],
-			[
-				"tow",
-				"Tower.py"
 			],
 			[
 				"cou",
@@ -1907,34 +1827,6 @@
 			[
 				"asidecl",
 				"control/Aside.class.php"
-			],
-			[
-				"asi",
-				"bloc/aside-sublime.php"
-			],
-			[
-				"comcss",
-				"style/commentaire.css"
-			],
-			[
-				"rem",
-				"bien-continuer-et-remerciment.php"
-			],
-			[
-				"bien",
-				"bien-continuer.php"
-			],
-			[
-				"reme",
-				"bien-continuer-et-remerciment.php"
-			],
-			[
-				"bu",
-				"bug-raccourci.php"
-			],
-			[
-				"com",
-				"commandes-base.php"
 			]
 		],
 		"width": 0.0
@@ -1947,7 +1839,7 @@
 		[
 			[
 				"",
-				"C:\\#Python\\Python test\\jeu-resau\\jeu-resau.sublime-project"
+				"C:\\Users\\math\\AppData\\Roaming\\Sublime Text 3\\Packages\\zz snippet lister\\snippet-lister.sublime-project"
 			],
 			[
 				"test",

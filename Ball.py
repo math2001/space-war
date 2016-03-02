@@ -24,7 +24,7 @@ class Ball:
 			self.is_fired = 0
 			
 	def follow(self, pos):
-		if self.speed[0] + self.speed[1] == 0: # la balle n est pas tire
+		if self.speed[0] == 0 and self.speed[1] == 0: # la balle n est pas tire
 			self.rect.center = pos
 
 	def is_fire(self):

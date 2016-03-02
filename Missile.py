@@ -10,7 +10,7 @@ pygame.init()
 class Missile(Screen):
 	def __init__(self, center=(0, 0), vitesse=10):
 		Screen.__init__(self)
-		self.image = pygame.image.load('img/missile.png').convert_alpha()
+		self.image = pygame.image.load('img/bullet-1.png').convert_alpha()
 		self.rect  = self.image.get_rect(center=center)
 
 		self.speed = [0, 0]
@@ -36,16 +36,16 @@ class Missile(Screen):
 		sin = math.sin(math.radians(angle))	
 		y = math.floor(cos * self.vitesse)
 		x = math.floor(sin * self.vitesse)
-
-		return x, y
+		return ((x, y), angle)
 
 	def _is_out(self):
 		return not self.srect.colliderect(self.rect)
 
 	def fire(self, xtower, ytower, xcible, yxible):
 		if not self.is_fire:
-			self.speed = self._calculeSpeed(xtower, ytower, xcible, yxible)
+			self.speed, angle = self._calculeSpeed(xtower, ytower, xcible, yxible)
 			self.is_fire = True
+			return angle
 
 	def render(self):
 		return self.image, self.rect

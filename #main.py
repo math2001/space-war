@@ -1,3 +1,7 @@
+# Vous 
+TIME_TO_ADD_TOWER = 2
+
+
 import random
 import pygame
 import time
@@ -14,6 +18,7 @@ from Son import Son
 pygame.init()
 
 screen = pygame.display.set_mode((0, 0), FULLSCREEN)
+pygame.time.wait(1000)
 # screen = pygame.display.set_mode((500, 500))
 srect  = screen.get_rect()
 pygame.display.set_caption('Space War - BETA')
@@ -22,13 +27,21 @@ pygame.display.set_icon(pygame.image.load('img/ship-1-mini.png').convert_alpha()
 def rnd():
 	return random.randint(0, srect.width), random.randint(0, srect.height)
 
+def game_over(ship):
+	ship.save_score()
 
 cont = True
 while cont:
-	 # on attend 50ms pour ne pas qu'on relance le jeu direct
+	ship = Ship()
+	towers = []
+
+	life = Life()
+	son = Son()
+	son.play_music('menu1.4.wav')
+
 	game = True
 	# on affiche le menu
-	run_menu()
+	run_menu(ship.get_best_score())
 	pygame.display.flip()
 	pygame.event.clear()
 	# on nettoie les evenement
@@ -41,23 +54,32 @@ while cont:
 			elif ev.type == KEYDOWN:
 				start = True
 
-	ship = Ship()
-	towers = []
-
-	life = Life()
-	son = Son()
-	tmp = Time()
+	son.stop_music(2000)
 	son.play_music('ThunderZone.mp3')
 
+	tmp = Time()
+
+
+	# ------------------------------ #
+	# ------------ Game ------------ #
+	# ------------------------------ #
 	while game:
-		if tmp.get_time() == 2:
+		screen.fill(white)
+		pygame.mouse.set_visible(False)
+
+		# on ajoute des tour
+		if tmp.get_time() == TIME_TO_ADD_TOWER:
 			towers.append( Tower( rnd(), random.randint(1, 10) ))
 			tmp.reset_time()
-		screen.fill(white)
+
 		for ev in pygame.event.get():
-			if ev.type == QUIT or (ev.type == KEYDOWN and ev.key == K_ESCAPE): game = 0
-
-
+			if ev.type == QUIT or (ev.type == KEYDOWN and ev.key == K_ESCAPE): 
+				print "QUIT"
+				son.stop_music(2000)
+				game_over(ship)
+				game = 0
+			if ev.type == KEYDOWN and ev.unicode == "m":
+				son.toogle_son()
 
 		for tower in towers:
 			tower.render()
@@ -67,15 +89,14 @@ while cont:
 				towers.remove(tower) # on le retire de la liste - towerS.rem...
 				ship.stop_ball()
 				ship.add_score()
-				if ship.is_rotating():
-					ship.add_life(5)
+				ship.add_life(int(tower.get_level() / 2))
 
 			# on test si le ship n'a pas ete touche par un missile
 			if ship.collision(tower.get_missile_rect()) and tower.missile.is_fire:
 				tower.remove_missile()
 				if not ship.explose():
 					son.play("explosion")
-					# pygame.time.wait(1000)
+					game_over(ship)
 					son.stop_music(2000)
 					game = 0
 

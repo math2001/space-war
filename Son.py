@@ -12,14 +12,25 @@ class Son:
 			"explosion": pygame.mixer.Sound('son/explosion.wav'),
 			"tire"     : pygame.mixer.Sound('son/tire.ogg')
 		}
+		self.son_active = True
 
+	def toogle_son(self):
+		self.son_active = not self.son_active
+		if not self.son_active:
+			pygame.mixer.music.stop()
+		else:
+			pygame.mixer.music.play(-1)
 
 	def play(self, son):
-		self.sons[son].play()
+		if self.son_active:
+			self.sons[son].play()
 
 	def play_music(self, name):
-		pygame.mixer.music.load(os.path.join('son', name))
-		pygame.mixer.music.play(-1)
+		if self.son_active:
+			pygame.mixer.music.load(os.path.join('son', name))
+			pygame.mixer.music.play(-1)
 
-	def stop_music(self, fadeout):
-		pygame.mixer.music.fadeout(fadeout)
+
+
+	def stop_music(self, fadeout=2000):
+		pygame.mixer.music.fadeout(fadeout) 

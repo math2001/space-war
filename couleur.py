@@ -9,3 +9,5 @@ jaune  = yellow = 255, 255, 0
 gris   = grey   = gray = 155, 155, 155
 
 orange =  255, 155, 0
+
+h333 = 51, 51, 51

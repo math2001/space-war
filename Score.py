@@ -1,5 +1,6 @@
 import pygame
 import os
+import pickle
 from pygame.locals import *
 from couleur import *
 
@@ -12,11 +13,32 @@ class Score:
 		else:
 			self.font = pygame.font.Font(os.join.path('font', font), size)
 		self.score = 0
+		self.path = "data/score.txt"
 
 	def add(self):
 		self.score += 1
 
+	def save_best_score(self):
+		if os.path.isfile(self.path):
+			with open(self.path, 'r') as f:
+				content = pickle.Unpickler(f).load()
+			current_best_score = int(content)
+			if self.score > current_best_score:
+				with open(self.path, 'w') as f:
+					pickle.Pickler(f).dump(self.score)
+		else:
+			with open(self.path, 'w') as f:
+				pickle.Pickler(f).dump(self.Score7)
+
+	def get_best_score(self):
+		with open(self.path, "r") as f:
+			content = pickle.Unpickler(f).load()
+		return content
+
+	def get_score(self):
+		return self.score
+
 	def render(self):
-		text = self.font.render('Score :' + str(self.score), 1, gray, pygame.Color(255, 255, 255, 255))
+		text = self.font.render('Score :' + str(self.score), 1, gray)
 		rect = text.get_rect()
 		return text, rect

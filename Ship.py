@@ -161,3 +161,12 @@ class Ship(Screen):
 		self.life += nb
 		if self.life > self.max_life:
 			self.life = self.max_life
+
+	def get_score(self):
+		return self.score.get_score()
+
+	def save_score(self):
+		self.score.save_best_score()
+
+	def get_best_score(self):
+		return self.score.get_best_score()
