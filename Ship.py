@@ -98,6 +98,7 @@ class Ship(Screen):
 		if self._test_index(keystate, self.keys["fire"]):
 			self.ball.fire(self.current_angle)
 
+
 		# test
 		if self._test_index(keystate, self.keys["lose_life"]):
 			self.life -= 1

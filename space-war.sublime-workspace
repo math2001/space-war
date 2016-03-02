@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"scre",
+				"screenshot"
+			],
+			[
+				"Sc",
+				"Screenshot"
+			],
+			[
+				"screen",
+				"screenshot"
+			],
+			[
 				"son",
 				"son_active"
 			],
@@ -190,10 +202,6 @@
 			[
 				"ob",
 				"jQueryObject1"
-			],
-			[
-				"screen",
-				"screenHeight"
 			],
 			[
 				"anm",
@@ -506,19 +514,19 @@
 			[
 				"upper",
 				"upper_case"
-			],
-			[
-				"comm",
-				"command"
-			],
-			[
-				"html",
-				"htmlspecialchars"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "#main.py",
+			"settings":
+			{
+				"buffer_size": 2757,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -913,25 +921,27 @@
 	},
 	"expanded_folders":
 	[
-		"/C/#Python/Python mes jeux/space-war"
+		"/C/#Python/Python mes jeux/space-war",
+		"/C/#Python/Python mes jeux/space-war/screenshot"
 	],
 	"file_history":
 	[
+		"/C/#Python/Python mes jeux/space-war/Ship.py",
 		"/C/#Python/Python mes jeux/space-war/Screenshot.py",
+		"/C/#Python/Python mes jeux/space-war/Son.py",
+		"/C/#Python/Python mes jeux/space-war/Screen.py",
+		"/C/#Python/Python mes jeux/space-war/Tower.py",
 		"/C/#Python/Python mes jeux/space-war/#main.py",
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/#Python/Python mes jeux/space-war/FileController.py",
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/snippet/python/big-commentaire.sublime-snippet",
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/Theme - Soda/README.md",
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/#Python/Python mes jeux/space-war/Son.py",
-		"/C/#Python/Python mes jeux/space-war/Tower.py",
 		"/C/#Python/Python mes jeux/space-war/Missile.py",
 		"/C/#Python/Python mes jeux/space-war/## coucou.py",
 		"/C/#Python/Python mes jeux/space-war/Score.py",
 		"/C/#Python/Python mes jeux/space-war/Game.py",
 		"/C/#Python/Python mes jeux/space-war/Tools.py",
-		"/C/#Python/Python mes jeux/space-war/Ship.py",
 		"/C/#Python/Python mes jeux/space-war/couleur.py",
 		"/C/#Python/Python test/converter-color/converter-color.py",
 		"/C/Users/math/Desktop/coloration-syntaxique.scss",
@@ -949,7 +959,6 @@
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/User/snippet/python/import-base.sublime-snippet",
 		"/C/Users/math/python/Lib/site-packages/pygame/draw.pyd",
 		"/C/Users/math/python/Lib/site-packages/pygame/__init__.py",
-		"/C/#Python/Python mes jeux/space-war/Screen.py",
 		"/C/Users/math/AppData/Roaming/Sublime Text 3/Packages/zz snippet lister/package-control.cleanup",
 		"/C/#Python/Python mes jeux/space-war/client.py",
 		"/C/#Python/Python mes jeux/space-war/server.py",
@@ -1067,6 +1076,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Screenshot",
+			"screenshot",
+			"get_pressed",
 			"os.path.join('data', 'nb_screenshot.txt')",
 			"screen",
 			"motie",
@@ -1191,10 +1203,7 @@
 			"50",
 			"0",
 			"context",
-			"\"([a-zA-Z]+)\"",
-			"\":",
-			"\"",
-			"width"
+			"\"([a-zA-Z]+)\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1247,8 +1256,38 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "#main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2757,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2757,
+								2757
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1900.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1325,12 +1364,24 @@
 				"Son.py"
 			],
 			[
-				"mis",
-				"Missile.py"
+				"ship",
+				"Ship.py"
+			],
+			[
+				"scres",
+				"Screenshot.py"
+			],
+			[
+				"scre",
+				"Screen.py"
 			],
 			[
 				"tow",
 				"Tower.py"
+			],
+			[
+				"mis",
+				"Missile.py"
 			],
 			[
 				"missil",
@@ -1347,10 +1398,6 @@
 			[
 				"game",
 				"Game.py"
-			],
-			[
-				"ship",
-				"Ship.py"
 			],
 			[
 				"too",
@@ -1407,10 +1454,6 @@
 			[
 				"te",
 				"test.py"
-			],
-			[
-				"scre",
-				"Screen.py"
 			],
 			[
 				"editojs",
@@ -1823,10 +1866,6 @@
 			[
 				"comme",
 				"commentaire-du-cours-sur-sublime-text.php"
-			],
-			[
-				"asidecl",
-				"control/Aside.class.php"
 			]
 		],
 		"width": 0.0

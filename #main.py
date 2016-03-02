@@ -14,6 +14,7 @@ from Life import Life
 from Time import Time
 from Game import run_menu
 from Son import Son
+from Screenshot import Screenshot
 
 pygame.init()
 
@@ -37,6 +38,8 @@ while cont:
 
 	life = Life()
 	son = Son()
+	screenshot = Screenshot()
+	print screenshot
 	son.play_music('menu1.4.wav')
 
 	game = True
@@ -108,4 +111,7 @@ while cont:
 		life.render()
 
 		pygame.display.flip()
+
+		if pygame.key.get_pressed()[K_s]:
+			screenshot.take()
 pygame.quit()

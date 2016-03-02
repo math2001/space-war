@@ -16,7 +16,6 @@ class Tower(Screen):
 
 		self.font = pygame.font.Font("font/space_invaders.ttf", 30)
 
-
 		self.rect.center = center
 
 		self.current_angle = 0

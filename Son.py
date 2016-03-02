@@ -12,7 +12,7 @@ class Son:
 			"explosion": pygame.mixer.Sound('son/explosion.wav'),
 			"tire"     : pygame.mixer.Sound('son/tire.ogg')
 		}
-		self.son_active = True
+		self.son_active = False
 
 	def toogle_son(self):
 		self.son_active = not self.son_active

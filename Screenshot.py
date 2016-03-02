@@ -1,9 +1,11 @@
 import pygame
 import time
 import os
+import pickle
 from pygame.locals import *
 from couleur import *
 from Screen import Screen
+
 
 pygame.init()
 
@@ -14,16 +16,17 @@ class Screenshot(Screen):
 
 	def _generate_name(self):
 		date = time.localtime()
-		if os.isfile(self.file):
+		if os.path.isfile(self.file):
 			with open(self.file, 'r') as f:
-				content = pickle.Unpicler(f).load()
+				content = pickle.Unpickler(f).load()
 			return "screenshot-" + str(content)
 		else:
 			with open(self.file, 'w') as f:
-				pickle.Pickler(f).dump(1)
+				pickle.Pickler(f).dump("1")
+			return "screenshot-1"
 
 	def _increment(self):
-		if os.isfile(self.file):
+		if os.path.isfile(self.file):
 			with open(self.file, "r") as f:
 				nb_screenshot = int(pickle.Unpickler(f).load())
 			with open(self.file, 'w') as f:
@@ -33,6 +36,6 @@ class Screenshot(Screen):
 
 		pygame.image.save(
 			self.screen,
-			"screenshot/" + self._generate_name() + ".png"
+			"screenshot" + os.sep + self._generate_name() + ".png"
 		)
 		self._increment()
