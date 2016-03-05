@@ -28,11 +28,14 @@ class Score:
 					pickle.Pickler(f).dump(self.score)
 		else:
 			with open(self.path, 'w') as f:
-				pickle.Pickler(f).dump(self.Score7)
+				pickle.Pickler(f).dump(self.score)
 
 	def get_best_score(self):
-		with open(self.path, "r") as f:
-			content = pickle.Unpickler(f).load()
+		try:
+			with open(self.path, "r") as f:
+				content = pickle.Unpickler(f).load()
+		except IOError:
+			content = None
 		return content
 
 	def get_score(self):
