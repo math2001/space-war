@@ -9,6 +9,7 @@ from Screen import Screen
 
 pygame.init()
 
+
 class Screenshot(Screen):
 	def __init__(self):
 		Screen.__init__(self)

@@ -2,17 +2,21 @@
 TIME_TO_ADD_TOWER = 2
 
 
+
+
 import random
 import pygame
 import time
 from pygame.locals import *
+
+
 
 from couleur import *
 from Ship import Ship
 from Tower import Tower
 from Life import Life
 from Time import Time
-from Game import run_menu
+from Game import run_menu, run_mouse_menu, run_a_propos
 from Son import Son
 from Screenshot import Screenshot
 
@@ -32,30 +36,27 @@ def game_over(ship):
 	ship.save_score()
 
 cont = True
+son = Son()
+screenshot = Screenshot()
 while cont:
+	pygame.mouse.set_visible(False)
 	ship = Ship()
 	towers = []
 
 	life = Life()
-	son = Son()
-	screenshot = Screenshot()
-	print screenshot
 	son.play_music('menu1.4.wav')
 
-	game = True
-	# on affiche le menu
-	run_menu(ship.get_best_score())
-	pygame.display.flip()
-	pygame.event.clear()
-	# on nettoie les evenement
-	start = False
-	while not start:
-		for ev in pygame.event.get():
-			if ev.type == QUIT or (ev.type == KEYDOWN and ev.key == K_ESCAPE): 
-				game = cont = False
-				start = True
-			elif ev.type == KEYDOWN:
-				start = True
+	text = run_mouse_menu(ship.get_best_score()).lower()
+
+	game = False
+	a_propos = False
+	if "jouer" in text:
+		game = True
+	elif "quitter" in text:
+		game = cont = False
+	elif "propos" in text:
+		a_propos = True
+
 
 	son.stop_music(2000)
 	son.play_music('ThunderZone.mp3')
@@ -77,7 +78,6 @@ while cont:
 
 		for ev in pygame.event.get():
 			if ev.type == QUIT or (ev.type == KEYDOWN and ev.key == K_ESCAPE): 
-				print "QUIT"
 				son.stop_music(2000)
 				game_over(ship)
 				game = 0
@@ -114,4 +114,15 @@ while cont:
 
 		if pygame.key.get_pressed()[K_s]:
 			screenshot.take()
+
+	while a_propos:
+		cont = True
+		screen.fill(h333)
+
+		if "coucou" == run_a_propos():
+			a_propos = False
+
+		pygame.display.flip()
+
+
 pygame.quit()

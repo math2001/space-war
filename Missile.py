@@ -6,7 +6,6 @@ import math
 
 pygame.init()
 
-
 class Missile(Screen):
 	def __init__(self, center=(0, 0), vitesse=10):
 		Screen.__init__(self)

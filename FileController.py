@@ -16,4 +16,4 @@ class FileController:
 	def load(self, *path):
 		path = os.path.join(path)
 		if os.isfile(path):
-			print "coucou"
+			pass

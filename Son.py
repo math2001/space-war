@@ -3,7 +3,6 @@ import os
 from pygame.locals import *
 from couleur import *
 
-
 pygame.init()
 
 class Son:
@@ -26,8 +25,8 @@ class Son:
 			self.sons[son].play()
 
 	def play_music(self, name):
+		pygame.mixer.music.load(os.path.join('son', name))
 		if self.son_active:
-			pygame.mixer.music.load(os.path.join('son', name))
 			pygame.mixer.music.play(-1)
 
 
